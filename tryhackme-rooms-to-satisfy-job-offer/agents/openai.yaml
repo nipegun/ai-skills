@@ -1,0 +1,4 @@
+interface:
+  display_name: "TryHackMe Rooms and Modules for Job Offers"
+  short_description: "Match TryHackMe rooms and modules to job requirements"
+  default_prompt: "Use $tryhackme-rooms-to-satisfy-job-offer to analyse this job offer and recommend the relevant TryHackMe rooms and modules."
