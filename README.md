@@ -1,0 +1,3 @@
+# ai-skills
+
+Mu set of original skills for everyday use. Or maybe not...

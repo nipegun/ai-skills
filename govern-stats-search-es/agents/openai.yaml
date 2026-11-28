@@ -1,0 +1,4 @@
+interface:
+  display_name: "Estadísticas del INE de España"
+  short_description: "Consulta estadísticas oficiales del INE"
+  default_prompt: "Usa $govern-stats-search-es para buscar la tasa de paro de Andalucía en el cuarto trimestre de 2025 y citar la tabla oficial."

@@ -1,0 +1,22 @@
+# Encontrar publicaciones y datos en el portal del INE
+
+## Desde la pregunta hasta la fuente
+
+- En INEbase, busca el nombre completo de la operación, su sigla y el término estadístico. Desde la ficha, abre **Resultados** para el detalle, **Últimos datos** para la publicación reciente y **Metodología** para definiciones, unidades y cobertura. Algunos árboles de resultados pasan por `/dynt3/inebase/index.htm?padre=…&capsel=…`. El Inventario de Operaciones Estadísticas identifica el organismo responsable. [Catálogo de INEbase](https://www.ine.es/dyngs/INEbase/listaoperaciones.htm) · [Inventario de Operaciones Estadísticas](https://www.ine.es/dyngs/IOE/es/index.htm)
+- Para el **paro**, comprueba si se piden la tasa o el número de personas, el trimestre o la media anual, el nivel territorial y el grupo de edad. La tabla trimestral de la EPA `65334`, su antecesora `4247` y algunas tablas de medias anuales comparten un título similar. La metodología y los períodos permiten distinguirlas. [Tabla 65334](https://www.ine.es/jaxiT3/Tabla.htm?t=65334) · [Tabla 4247](https://www.ine.es/jaxiT3/Tabla.htm?t=4247) · [Metodología EPA](https://www.ine.es/dynt3/metadatos/es/RespuestaDatos.htm?oe=30308)
+- Para la **población**, elige entre las cifras oficiales de la revisión del Padrón Municipal, el Censo Anual de Población y la Estadística Continua de Población según lo que pida el usuario. Comprueba el nivel territorial con los códigos del INE cuando el nombre coincida con el de una provincia o comunidad. El Padrón Municipal organiza parte del detalle en tablas por provincia. [Padrón Municipal](https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177011&idp=1254734710990&menu=resultados) · [Censo Anual](https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736176992&idp=1254735572981&menu=resultados)
+
+## Prensa, metodología y descargas
+
+- Para una **nota de prensa**, busca por operación y período de referencia en el archivo de comunicados. El **calendario** da fechas de difusión y distingue los avances de las publicaciones siguientes. Comprueba el estado de la cifra en la nota o en la tabla. [Notas y comunicados](https://www.ine.es/dyngs/Prensa/notasPrensa.htm) · [Calendario](https://www.ine.es/dynt3/Calendario/calenHTML.htm)
+- Para una **definición** o un cambio de base, abre el informe metodológico o las notas desde la ficha de la operación. Cita el apartado consultado. En los anexos PDF o Excel, identifica también la página o el nombre de la tabla si ayudan a verificar el dato.
+- En la **vista de tabla**, selecciona valores y período y pulsa «Consultar selección». Enlaza la tabla de origen y anota las categorías elegidas, porque la selección viaja en el formulario. Para un archivo, sigue «Formatos de descarga disponibles». Los enlaces del menú web son una alternativa si falla la exportación de la API. Las descargas pueden representar la tabla completa y requerir filtrado local. [Ejemplo de menú de descargas](https://www.ine.es/jaxiT3/dlgExport.htm?t=76125)
+- En **CSV**, comprueba el separador y la codificación a partir del archivo. Se observaron ficheros con BOM UTF-8 y cabecera HTTP ISO-8859-15. En tablas españolas, una cifra puede tener coma decimal y puntos de millares. Respeta las notas de la tabla y conserva los campos vacíos antes de convertir a números.
+
+## Productos con consulta propia
+
+Datos abiertos reúne accesos a SDMX y microdatos anonimizados. Para frecuencias de nombres y apellidos, usa las aplicaciones o ficheros de la operación correspondiente. Para anuarios y censos antiguos, consulta INEbase Historia. [Datos abiertos](https://www.ine.es/dyngs/DAB/es/index.htm?cid=1722) · [Nombres y apellidos](https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177009&idp=1254735572981&menu=resultados) · [INEbase Historia](https://www.ine.es/inebaseweb/hist.do?L=0)
+
+El Censo de 2021 dispone de un POST de consulta con identificadores específicos y hasta cuatro variables. Si esa API queda vacía o no responde, busca los resultados publicados de la operación en INEbase y comprueba su cobertura. [API del Censo de 2021](https://www.ine.es/dyngs/DAB/index.htm?cid=1769)
+
+En resultados reutilizados, cita al organismo productor y la fecha de actualización cuando figure en el original. Para un cálculo propio, identifica el dato de partida, el enlace y el cálculo. [Aviso legal del INE](https://www.ine.es/dyngs/AYU/index.htm?cid=125)

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Estadísticas del INDEC de Argentina"
+  short_description: "Consulta estadísticas oficiales del INDEC"
+  default_prompt: "Usa $govern-stats-search-ar para consultar el IPC nacional de octubre de 2026 y citar la fuente oficial."

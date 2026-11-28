@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local Hardware Debian Kernel Compiler"
+  short_description: "Build the newest kernel compatible with all stable modules"
+  default_prompt: "Use $local-hardware-debian-kernel-compiler to build minimal Debian kernel packages for this computer, selecting the newest stable kernel that compiles every required stable module and descending kernel versions when compatibility requires it."
